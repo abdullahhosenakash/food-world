@@ -18,6 +18,24 @@
             <h1 class="text-center fw-bolder">Welcome to Food World!</h1>
         </section>
     </header>
+    <main>
+        <section class="container">
+            <!-- search field  -->
+            <div class="input-group mb-3 w-50 mx-auto mt-5">
+                <input type="text" id="search-food" class="form-control" placeholder="Search food here"
+                    aria-label="search area" aria-describedby="button-addon2">
+                <button onclick="searchMeals()" class="btn btn-outline-secondary" type="button"
+                    id="search-button">Search
+                    Food</button>
+            </div>
+            <!-- single meal detail  -->
+            <div id="meal-detail" class="w-50 mx-auto">
+            </div>
+            <!-- food cards -->
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="food-cards">
+            </div>
+        </section>
+    </main>
 
     <!-- javascripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
