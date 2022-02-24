@@ -72,3 +72,8 @@ const displayMealDetail = meal => {
     `;
     foodCards.appendChild(div);
 }
+document.getElementById('search-food').addEventListener('keyup', event => {
+    if (event.keyCode == 13) {
+        searchMeals();
+    }
+})
